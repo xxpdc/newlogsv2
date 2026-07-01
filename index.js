@@ -5,8 +5,8 @@ const app = express();
 
 app.use(express.json());
 
-// Replace with your real Discord Webhook URL
-const DISCORD_WEBHOOK = "https://discord.com/api/webhooks/1521718466845872188/AxkF_e2UKnMvGLInO1jmKsOOrWz5rmsN7Om53b0zGE2icz74uJXFX7LiKo5S3N3R3xT8";
+// Replace with your real Discord Webhook URL 
+const DISCORD_WEBHOOK = process.env.WEBHOOK_URL;
 
 app.post('/generate', async (req, res) => {
     try {
